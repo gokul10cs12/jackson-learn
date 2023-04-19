@@ -1,6 +1,12 @@
 {
-  "name" : "Joker",
-  "employeeId" : "test123",
-  "dob" : "1993-28-04",
-  "bu" : "NW"
+  "positionsFilled" : [ "dev", "dev2", "senior dev" ],
+  "company" : "RSA",
+  "fullTime" : true,
+  "theEmployee" : {
+    "name" : "things",
+    "employeeId" : "123",
+    "dob" : "28-04-1993",
+    "bu" : "NW"
+  },
+  "age" : 26
 }
