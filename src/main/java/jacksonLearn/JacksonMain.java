@@ -30,7 +30,7 @@ public class JacksonMain {
 
         String resultJson = mapper2.writeValueAsString(model);
 
-//        System.out.println(resultJson);
+        System.out.println(resultJson);
 
     }
 }

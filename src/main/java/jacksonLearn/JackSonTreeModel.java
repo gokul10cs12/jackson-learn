@@ -3,7 +3,6 @@ package jacksonLearn;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.util.Iterator;
 
 public class JackSonTreeModel {
@@ -26,13 +25,10 @@ public class JackSonTreeModel {
         JsonNode abc = rooter.get("marks");
         System.out.println("abc->" + abc.intValue());
 
-
         Iterator<JsonNode> marksIterator = marksNode.elements();
         while (marksIterator.hasNext()){
             JsonNode mark = marksIterator.next();
             System.out.printf("marks ->" + mark.intValue());
         }
-
-
     }
 }

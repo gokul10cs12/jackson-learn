@@ -2,10 +2,13 @@ package jacksonLearn.Model;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@JsonPropertyOrder({"properties", "name"})
 public class TestModel {
     private String name;
     private Map<String, String> properties;
@@ -19,6 +22,7 @@ public class TestModel {
         this.properties = new HashMap<>();
     }
 
+    @JsonGetter
     public String getName() {
         return name;
     }
